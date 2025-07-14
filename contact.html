@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Reservations | Tasty Munchies</title>
+    <!-- Link to CSS style sheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo"><a href="index.html">Tasty Munchies</a></div>
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-section">
+      <h1>Contact & Reservations</h1>
+      <p>
+        Got questions? Craving a table? Reach out and let’s get you fed 🍕✨
+      </p>
+
+      <div class="contact-info">
+        <div>
+          <h2>Contact Info</h2>
+          <p><strong>Phone:</strong> +254 712 345678</p>
+          <p><strong>Email:</strong> hello@tastymunchies.co.ke</p>
+          <p><strong>Location:</strong> Luthuli Ave, Nairobi, Kenya</p>
+          <p>
+            <strong>Opening Hours:</strong><br />
+            Mon–Sun: 11am – 11pm
+          </p>
+        </div>
+
+        <div>
+          <h2>Reserve a Table</h2>
+          <form class="reservation-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+            <input
+              type="number"
+              name="guests"
+              placeholder="Number of Guests"
+              min="1"
+              required
+            />
+            <input type="date" name="date" required />
+            <input type="time" name="time" required />
+            <textarea
+              name="message"
+              rows="3"
+              placeholder="Any special requests?"
+            ></textarea>
+            <button type="submit" class="btn">Book Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Tasty Munchies | <a href="index.html">Back to Home</a></p>
+    </footer>
+  </body>
+</html>

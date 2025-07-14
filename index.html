@@ -4,143 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasty Munchies</title>
-    <!-- Link to google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Link to css style sheet -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
+    <!-- Link to CSS style sheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
   <body>
+    <!-- Header -->
     <header>
-      <div class="container">
-        <h1>Tasty Munchies</h1>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div class="logo">Tasty Munchies</div>
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section id="home" class="hero">
-      <div class="container">
-        <h2>Come hungry. Leave high on life (and fries).</h2>
-        <p>The ultimate cozy spot for your wildest munchie cravings.</p>
-        <a href="#menu" class="btn">View the Munchie Menu</a>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome to Tasty Munchies</h1>
+        <p>Where cravings meet creativity — indulge your stoner side 🍔🌈</p>
+        <a href="menu.html" class="btn">View Menu</a>
       </div>
     </section>
 
-    <section id="menu" class="menu">
-      <div class="container">
-        <h2>Menu</h2>
-        <div class="menu-section">
-          <h3>Couch Classics</h3>
-          <ul>
-            <li>
-              <strong>Trippy Fries</strong> - Loaded with sauces you didn't know
-              you needed
-            </li>
-            <li>
-              <strong>Cheesy Mood Rings</strong> - Mozzarella sticks with a vibe
-              shift
-            </li>
-          </ul>
-          <h3>High-End High Cuisine</h3>
-          <ul>
-            <li><strong>Stoned Salmon</strong> - Glazed and confused</li>
-            <li>
-              <strong>Bougie Burger</strong> - Wagyu, gold flakes, and no
-              regrets
-            </li>
-          </ul>
-          <h3>Sweet Trips</h3>
-          <ul>
-            <li>
-              <strong>Cereal Milk Sundae</strong> - Childhood trauma never
-              tasted so sweet
-            </li>
-            <li>
-              <strong>Deep-Fried Oreos</strong> - Don’t question it. Just eat.
-            </li>
-          </ul>
-          <h3>WTF is This?</h3>
-          <ul>
-            <li>
-              <strong>ChocoTaco Nachos</strong> - Crunchy, sweet, confusing
-            </li>
-            <li><strong>Mac 'n' Waffles</strong> - Yes, you read that right</li>
-          </ul>
+    <!-- About snippet -->
+    <section class="about">
+      <h2>About Us</h2>
+      <p>
+        We’re not your average restaurant. At Tasty Munchies, we blend bold
+        flavors, fun vibes, and cozy comfort food to satisfy even the wildest
+        munchies.
+      </p>
+    </section>
+
+    <!-- Menu preview -->
+    <section class="menu-preview">
+      <h2>Fan Faves</h2>
+      <div class="menu-items">
+        <div class="item">
+          <h3>Fried Oreos</h3>
+          <p>Crispy, gooey, mind-blowing.</p>
+        </div>
+        <div class="item">
+          <h3>Mac & Cheese</h3>
+          <p>Cheesy goodness in every bite.</p>
+        </div>
+        <div class="item">
+          <h3>Sliders</h3>
+          <p>Mini but mighty burgers for the win.</p>
         </div>
       </div>
+      <a href="menu.html" class="btn">See Full Menu</a>
     </section>
 
-    <section id="about" class="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>
-          Born from a wild night and a burnt grilled cheese, Tasty Munchies is
-          where stoner dreams become snack reality. Our crew is made of flavor
-          geniuses and laid-back legends who believe good food is a human right.
-        </p>
+    <!-- Gallery preview -->
+    <section class="gallery-preview">
+      <h2>Inside the Vibes</h2>
+      <div class="gallery">
+        <div class="img-box">Image 1</div>
+        <div class="img-box">Image 2</div>
+        <div class="img-box">Image 3</div>
       </div>
     </section>
 
-    <section id="gallery" class="gallery">
-      <div class="container">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-          <img
-            src="images/Veggie Sliders - Mini-Burger » Taste of Travel.jpg"
-            alt="Veggie Sliders"
-          />
-          <img
-            src="images/Truffle Garlic Parmesan Fries.jpg"
-            alt="Garlic Parmesan Fries"
-          />
-          <img
-            src="images/Golden Delight_ Deep-Fried Oreos with Powdered Sugar.jpg"
-            alt="Deep-Fried Oreos"
-          />
-          <img
-            src="images/Creamy Baked Mac and Cheese.jpg"
-            alt="Mac 'n' cheese"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <form>
-          <label for="name">Name (or nickname)</label>
-          <input type="text" id="name" name="name" />
-
-          <label for="email">Email or smoke signal location</label>
-          <input type="email" id="email" name="email" />
-
-          <label for="message">What’s on your mind?</label>
-          <textarea id="message" name="message"></textarea>
-
-          <button type="submit">Send Vibes</button>
-        </form>
-      </div>
-    </section>
-
+    <!-- Footer -->
     <footer>
-      <div class="container">
-        <p>
-          © 2025 Tasty Munchies • Hotline: 420-420-MUNCH • Follow us
-          @tastymunchies
-        </p>
-      </div>
+      <p>
+        &copy; 2025 Tasty Munchies | <a href="contact.html">Contact Us</a> |
+        Nairobi, Kenya
+      </p>
     </footer>
   </body>
 </html>

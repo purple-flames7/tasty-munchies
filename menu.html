@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu | Tasty Munchies</title>
-    <!-- Link to CSS style sheet -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Header -->
-    <header>
+    <header class="neon-header">
       <div class="logo"><a href="index.html">Tasty Munchies</a></div>
-      <!-- Navbar -->
-      <nav>
+
+      <div class="hamburger" id="hamburger">&#9776;</div>
+
+      <nav class="nav-links" id="nav-links">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -23,7 +27,10 @@
     </header>
 
     <section class="menu">
-      <h1>Our Menu</h1>
+      <h1 class="neon-text">Our Glorious Munchies</h1>
+      <p class="menu-intro">
+        From stoner snacks to elegant comfort food, here’s what we serve 🌮🍩
+      </p>
 
       <div class="menu-section">
         <h2>Munchies</h2>
@@ -32,55 +39,48 @@
           <p>Crispy fries tossed in garlic and cheesy goodness.</p>
         </div>
         <div class="menu-item">
-          <h3>Waffle Cut Fries <span>ksh 400</span></h3>
-          <p>Waffle-style for extra crunch — stoner-approved.</p>
+          <h3>Garlic Parmesan Fries <span>ksh 350</span></h3>
+          <p>Crispy fries tossed in garlic and cheesy goodness.</p>
         </div>
         <div class="menu-item">
-          <h3>Elotes (Mexican Street Corn) <span>ksh 300</span></h3>
-          <p>Grilled corn slathered in mayo, cheese, chili & lime.</p>
+          <h3>Garlic Parmesan Fries <span>ksh 350</span></h3>
+          <p>Crispy fries tossed in garlic and cheesy goodness.</p>
         </div>
-      </div>
-
-      <div class="menu-section">
+        <h2>Sweet treats</h2>
+        <div class="menu-item">
+          <h3>Garlic Parmesan Fries <span>ksh 350</span></h3>
+          <p>Crispy fries tossed in garlic and cheesy goodness.</p>
+        </div>
+        <div class="menu-item">
+          <h3>Garlic Parmesan Fries <span>ksh 350</span></h3>
+          <p>Crispy fries tossed in garlic and cheesy goodness.</p>
+        </div>
+        <div class="menu-item">
+          <h3>Garlic Parmesan Fries <span>ksh 350</span></h3>
+          <p>Crispy fries tossed in garlic and cheesy goodness.</p>
+        </div>
         <h2>Mains</h2>
         <div class="menu-item">
-          <h3>Sliders <span>ksh 600</span></h3>
-          <p>3 juicy mini burgers, packed with flavor.</p>
+          <h3>Garlic Parmesan Fries <span>ksh 350</span></h3>
+          <p>Crispy fries tossed in garlic and cheesy goodness.</p>
         </div>
         <div class="menu-item">
-          <h3>Mac & Cheese <span>ksh 550</span></h3>
-          <p>Ultra cheesy, melty, and magical comfort food.</p>
+          <h3>Garlic Parmesan Fries <span>ksh 350</span></h3>
+          <p>Crispy fries tossed in garlic and cheesy goodness.</p>
+        </div>
+        <div class="menu-item">
+          <h3>Garlic Parmesan Fries <span>ksh 350</span></h3>
+          <p>Crispy fries tossed in garlic and cheesy goodness.</p>
         </div>
       </div>
 
-      <div class="menu-section">
-        <h2>Sweet Treats</h2>
-        <div class="menu-item">
-          <h3>Fried Oreos <span>ksh 300</span></h3>
-          <p>Deep-fried chocolatey delight with a crispy shell.</p>
-        </div>
-        <div class="menu-item">
-          <h3>Churros <span>ksh 350</span></h3>
-          <p>Crispy on the outside, soft inside. Cinnamon sugar love.</p>
-        </div>
-      </div>
-
-      <div class="menu-section">
-        <h2>Drinks</h2>
-        <div class="menu-item">
-          <h3>House Lemonade <span>ksh 200</span></h3>
-          <p>Fresh, zesty, and refreshing.</p>
-        </div>
-        <div class="menu-item">
-          <h3>CBD Iced Tea <span>ksh 300</span></h3>
-          <p>Chill out with our signature herbal blend.</p>
-        </div>
-      </div>
+      <!-- Repeat other sections: Mains, Sweet Treats, Drinks -->
     </section>
 
-    <!-- Footer -->
     <footer>
       <p>&copy; 2025 Tasty Munchies | <a href="index.html">Back to Home</a></p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -4,19 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasty Munchies</title>
-
     <!-- Link to CSS style sheet -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <!-- Header -->
-    <header>
-      <div class="logo">Tasty Munchies</div>
+    <header class="neon-header">
+      <div class="logo"><a href="index.html">Tasty Munchies</a></div>
+
+      <div class="hamburger" id="hamburger">&#9776;</div>
+
       <!-- Navbar -->
-      <nav>
+      <nav class="nav-links" id="nav-links">
         <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -24,11 +33,40 @@
     </header>
 
     <!-- Hero section -->
-    <section class="hero">
+    <section class="hero plant-vibes">
       <div class="hero-text">
-        <h1>Welcome to Tasty Munchies</h1>
-        <p>Where cravings meet creativity — indulge your stoner side 🍔🌈</p>
-        <a href="menu.html" class="btn">View Menu</a>
+        <h1 class="neon-text">Crave. Glow. Devour.</h1>
+        <p>
+          Where your tastebuds meet cozy corners, leafy vibes, and a little bit
+          of neon chaos ✨🌱
+        </p>
+        <a href="menu.html" class="btn">Explore Menu</a>
+      </div>
+    </section>
+
+    <section class="highlight-section">
+      <h2>Why You'll Love Us</h2>
+      <div class="features">
+        <div class="feature-card">
+          <h3>🌿 Jungle Comfort</h3>
+          <p>
+            Surrounded by plants, wood, and chill — it's the perfect space to
+            munch and melt.
+          </p>
+        </div>
+        <div class="feature-card neon-border">
+          <h3>✨ Neon Nights</h3>
+          <p>
+            Glowing lights, laid-back music, and a menu that lights up your
+            mood.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>🍷 Cozy Elegance</h3>
+          <p>
+            Artisan dishes served with a warm vibe — high flavor, low pressure.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -73,11 +111,14 @@
     </section>
 
     <!-- Footer -->
+
     <footer>
       <p>
-        &copy; 2025 Tasty Munchies | <a href="contact.html">Contact Us</a> |
-        Nairobi, Kenya
+        &copy; 2025 Tasty Munchies | Nairobi |
+        <a href="contact.html">Contact Us</a>
       </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

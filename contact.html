@@ -3,67 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact & Reservations | Tasty Munchies</title>
-    <!-- Link to CSS style sheet -->
-    <link rel="stylesheet" href="styles.css" />
+    <title>Contact | Tasty Munchies</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Header -->
-    <header>
+    <header class="neon-header">
       <div class="logo"><a href="index.html">Tasty Munchies</a></div>
-      <!-- Navbar -->
-      <nav>
+
+      <div class="hamburger" id="hamburger">&#9776;</div>
+
+      <nav class="nav-links" id="nav-links">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="contact-section">
-      <h1>Contact & Reservations</h1>
-      <p>
-        Got questions? Craving a table? Reach out and let’s get you fed 🍕✨
-      </p>
+      <h1 class="neon-text">Talk to Us</h1>
+      <p>Whether it’s a booking, collab, or craving — we’re all ears 🌱</p>
 
       <div class="contact-info">
         <div>
-          <h2>Contact Info</h2>
-          <p><strong>Phone:</strong> +254 712 345678</p>
-          <p><strong>Email:</strong> hello@tastymunchies.co.ke</p>
-          <p><strong>Location:</strong> Luthuli Ave, Nairobi, Kenya</p>
-          <p>
-            <strong>Opening Hours:</strong><br />
-            Mon–Sun: 11am – 11pm
-          </p>
+          <h2>Visit Us</h2>
+          <p><strong>📍 Address:</strong> Luthuli Ave, Nairobi</p>
+          <p><strong>📞 Phone:</strong> +254 712 345678</p>
+          <p><strong>📧 Email:</strong> hello@tastymunchies.co.ke</p>
+          <p><strong>🕐 Hours:</strong> 11am – 11pm, Every Day</p>
         </div>
 
         <div>
-          <h2>Reserve a Table</h2>
+          <h2>Reserve</h2>
           <form class="reservation-form">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              required
-            />
-            <input
-              type="number"
-              name="guests"
-              placeholder="Number of Guests"
-              min="1"
-              required
-            />
-            <input type="date" name="date" required />
-            <input type="time" name="time" required />
-            <textarea
-              name="message"
-              rows="3"
-              placeholder="Any special requests?"
-            ></textarea>
+            <input type="text" placeholder="Your Name" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <input type="number" placeholder="Guests" required />
+            <input type="date" required />
+            <input type="time" required />
+            <textarea placeholder="Special requests?"></textarea>
             <button type="submit" class="btn">Book Now</button>
           </form>
         </div>
@@ -73,5 +57,7 @@
     <footer>
       <p>&copy; 2025 Tasty Munchies | <a href="index.html">Back to Home</a></p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

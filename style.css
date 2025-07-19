@@ -1,4 +1,4 @@
-/* Root variables and Base styles */
+/* Variables and Base styles */
 :root {
   --primary: #a47148;
   --background: #fffaf0;
@@ -20,15 +20,29 @@
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-sans);
   background: linear-gradient(135deg, #556b2f, #7b3f00);
   color: #f8f4ef;
+  line-height: 1.6;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-serif);
+  color: var(--text-dark);
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 /* Utility classes & animations */
@@ -44,6 +58,15 @@ h3 {
 
 .btn:hover {
   background-color: var(--highlight-dark);
+}
+
+.btn--alt {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.btn--alt:hover {
+  background-color: #8b5e3c;
 }
 
 .neon-text {
@@ -67,7 +90,6 @@ h3 {
 
 .neon-header .logo {
   font-size: 2rem;
-  font-family: "Playfair Display", serif;
   color: #b2f2bb;
   text-shadow: 0 0 5px #a0f2aa, 0 0 10px #a0f2aa;
   letter-spacing: 1px;
@@ -119,7 +141,6 @@ h3 {
   background-color: #fff8e1;
   text-align: center;
   color: #3a2e2e;
-  font-family: "Playfair Display", serif;
   border-top: 1px solid #e6dbcc;
   border-bottom: 1px solid #e6dbcc;
 }
@@ -131,7 +152,6 @@ h3 {
 }
 
 .highlight-section p {
-  font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
   max-width: 700px;
   margin: auto;
@@ -145,42 +165,6 @@ h3 {
   gap: 30px;
   padding: 60px 20px;
   background-color: #fefcf7;
-}
-
-.feature-card {
-  background-color: #fffaf0;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  padding: 20px;
-  text-align: center;
-  width: 340px;
-  transition: transform 0.3s ease;
-}
-
-.feature-card img {
-  height: 340px;
-  width: auto;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-.feature-card h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #3f3228;
-}
-
-.feature-card p {
-  font-family: "Nunito", sans-serif;
-  font-size: 1rem;
-  color: #5e4b3c;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(160, 242, 170, 0.2);
 }
 
 .neon-border {
@@ -200,37 +184,20 @@ h3 {
 }
 
 .about-snippet h2 {
-  font-family: "Playfair Display", serif;
   font-size: 2rem;
   margin-bottom: 20px;
   color: #4d3c2f;
 }
 
 .about-snippet p {
-  font-family: "Nunito", sans-serif;
   font-size: 1.1rem;
   color: #5e4b3c;
-  line-height: 1.6;
   margin-bottom: 30px;
 }
 
 .about-btn-wrapper {
   display: flex;
   justify-content: center;
-}
-
-.about-snippet .btn {
-  background-color: #a47148;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.about-snippet .btn:hover {
-  background-color: #8b5e3c;
 }
 
 .menu-preview {
@@ -240,7 +207,6 @@ h3 {
 }
 
 .menu-preview h2 {
-  font-family: "Playfair Display", serif;
   font-size: 2.2rem;
   color: #4d3c2f;
   margin-bottom: 40px;
@@ -253,16 +219,17 @@ h3 {
   justify-content: center;
 }
 
-.item {
+.card {
   background-color: #fffaf0;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   width: 260px;
   padding: 20px;
+  position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.item img {
+.card img {
   width: 100%;
   height: 160px;
   object-fit: cover;
@@ -270,22 +237,33 @@ h3 {
   margin-bottom: 15px;
 }
 
-.item h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.4rem;
-  color: #3f3228;
-  margin-bottom: 8px;
-}
-
-.item p {
-  font-family: "Nunito", sans-serif;
-  font-size: 1rem;
-  color: #5e4b3c;
-}
-
-.item:hover {
+.card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(160, 242, 170, 0.2);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #3a2e2e;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #5e4b3c;
+  margin-bottom: 20px;
+}
+
+.card .price {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: #a47148;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .gallery-preview {
@@ -295,7 +273,6 @@ h3 {
 }
 
 .gallery-preview h2 {
-  font-family: "Playfair Display", serif;
   font-size: 2.2rem;
   color: #4d3c2f;
   margin-bottom: 30px;
@@ -322,20 +299,6 @@ h3 {
   transform: scale(1.03);
 }
 
-.gallery-btn {
-  background-color: #a47148;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.gallery-btn:hover {
-  background-color: #8b5e3c;
-}
-
 /* Footer */
 footer {
   background-color: #1e1e1e;
@@ -354,9 +317,15 @@ footer {
   margin: auto;
 }
 
-.menu-section h2 {
+.menu-intro {
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: var(--text-main);
+}
+
+.menu-section h1 {
+  text-align: center;
   font-size: 2.4rem;
   margin-bottom: 50px;
   color: #4d3c2f;
@@ -366,8 +335,7 @@ footer {
   margin-bottom: 60px;
 }
 
-.menu-category h3 {
-  font-family: "Playfair Display", serif;
+.menu-category h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
   border-bottom: 2px solid #a47148;
@@ -380,46 +348,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
-}
-
-.menu-card {
-  background-color: #fffaf0;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-  position: relative;
-}
-
-.menu-card h4 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #3a2e2e;
-}
-
-.menu-card p {
-  font-family: "Nunito", sans-serif;
-  font-size: 1rem;
-  color: #5e4b3c;
-  margin-bottom: 20px;
-}
-
-.menu-card .price {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  background-color: #a47148;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.menu-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(160, 242, 170, 0.15);
 }
 
 /* About Page Styling */
@@ -435,17 +363,14 @@ footer {
 }
 
 .about-block h2 {
-  font-family: "Playfair Display", serif;
   font-size: 1.8rem;
   margin-bottom: 15px;
   color: #3a2e2e;
 }
 
 .about-block p {
-  font-family: "Nunito", sans-serif;
   font-size: 1.1rem;
   color: #5e4b3c;
-  line-height: 1.7;
 }
 
 .about-values {
